@@ -3,6 +3,8 @@
 
 This project implements a Machine Learning-based Spam Classifier using Multinomial Naive Bayes to identify and filter spam messages. The model achieves high accuracy and very high precision, ensuring reliable detection of spam.
 
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/Spam_Classifier-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://spam-classifier-kishan.onrender.com/)
 
 ## Most Frequent Ham Word
 ![App Screenshot](./media/frequent_ham_word.png)
