@@ -8,10 +8,15 @@ from nltk.stem.porter import PorterStemmer
 
 ps = PorterStemmer()
 
+import os
+
+os.environ['NLTK_DATA'] = '/opt/render/nltk_data'
+
 try:
-    nltk.data.find('tokenizers/punkt')
+    nltk.data.find('tokenizers/punkt_tab')
 except LookupError:
-    nltk.download('punkt')
+    nltk.download('punkt_tab', download_dir='/opt/render/nltk_data')
+    nltk.download('stopwords', download_dir='/opt/render/nltk_data')
 
 def transform_text(text):
     text = text.lower()
