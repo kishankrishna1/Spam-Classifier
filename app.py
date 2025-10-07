@@ -8,13 +8,10 @@ from nltk.stem.porter import PorterStemmer
 
 ps = PorterStemmer()
 
-import sklearn
-import numpy as np
-import pandas as pd
-
-print("scikit-learn version:", sklearn.__version__)
-print("NumPy version:", np.__version__)
-print("Pandas version:", pd.__version__)
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
 
 def transform_text(text):
     text = text.lower()
